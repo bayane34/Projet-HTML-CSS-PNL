@@ -1,4 +1,90 @@
-.container {
+body {
+    font-family: Arial, Heveltica, sans-serif;
+    margin: 0;
+    margin-bottom:1 rem;
+    text-align: center;
+    background-color: rgb(255,255,255);
+}
+
+.image {
     display: flex;
-    color: blue;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: rgb(10, 10, 15);
+}
+
+h2 {
+    color: rgb(10, 10, 15);
+}
+
+h3 {
+    color: rgb(10, 10, 15);
+}
+
+div {
+    justify-content: center;
+}
+
+.album-track-list-qlf {
+    padding: .25rem .5rem;
+    transition: all 250ms;
+}
+
+.album-track-list-qlf:hover {
+    background-color: var(--primary) !important;
+    color: rgb(199, 69, 112);
+}
+
+.album-titre-display-qlf {
+    padding: .25rem .5rem;
+    transition: all 250ms;
+    background-color: var(--primary) !important;
+    color: rgb(199, 69, 112);
+}
+
+.album-titre-display-lemondechico {
+    padding: .25rem .5rem;
+    transition: all 250ms;
+    background-color: var(--primary) !important;
+    color: rgb(210, 9, 76);
+}
+
+.album-track-list-lemondechico:hover {
+    background-color: var(--primary) !important;
+    color: rgb(210, 9, 76);
+}
+
+.album-titre-display-danslalegende {
+    padding: .25rem .5rem;
+    transition: all 250ms;
+    background-color: var(--primary) !important;
+    color: rgb(213, 116, 30);
+}
+
+.album-track-list-danslalegende:hover {
+    background-color: var(--primary) !important;
+    color: rgb(213, 116, 30);
+}
+
+.album-titre-display-deuxfreres {
+    padding: .25rem .5rem;
+    transition: all 250ms;
+    background-color: var(--primary) !important;
+    color: rgb(30, 114, 187);
+}
+
+.album-track-list-deuxfreres:hover {
+    background-color: var(--primary) !important;
+    color: rgb(30, 114, 187);
+}
+
+.sonlmc{
+    padding: .25rem .5rem;
+    transition: all 250ms;
+    background-color: var(--primary) !important;
+    color: rgb(210, 9, 76);
 }
