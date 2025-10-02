@@ -3,7 +3,29 @@ body {
     margin: 0;
     margin-bottom:1 rem;
     text-align: center;
-    background-color: rgb(255,255,255);
+    background-color: rgb(23, 30, 36);
+}
+
+nav {
+  background:rgb(12, 15, 18);   
+  padding: 1rem;
+}
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;       
+  gap: 1.5rem;
+}
+
+
+nav a {
+  color: white;        
+  text-decoration: none; 
+  font-weight: bold;
+  transition: color 0.2s;
 }
 
 .image {
@@ -13,78 +35,204 @@ body {
     align-items: center;
 }
 
+.image-index {
+    height: 500px;
+}
+
+.liens {
+    color: rgb(255, 255, 255);           
+    text-decoration: none; 
+    display: flex;
+    justify-content: left;
+}
+
+.liens:hover {
+    color:  rgb(177, 188, 201);            
+}
+
+.liens:visited {
+    color: rgb(255, 255, 255);           
+}
+
 h1 {
-    color: rgb(10, 10, 15);
+    color: white;
 }
 
 h2 {
-    color: rgb(10, 10, 15);
+    color: white;
 }
 
 h3 {
-    color: rgb(10, 10, 15);
+    color: white;
 }
 
-div {
+.gallery {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center; 
+    max-width: 100%; 
+}
+
+@media screen and (min-width:576) {
+    .gallery {
+        width:500px;
+    }
+}
+
+@media screen and (min-width:768) {
+    .gallery {
+        width:700px;
+    }
+}
+
+@media screen and (min-width:992) {
+    .gallery {
+        width:900px;
+    }
+}
+
+@media screen and (min-width:1200) {
+    .gallery {
+        width:1100px;
+    }
+}
+
+@media screen and (min-width:1400) {
+    .gallery {
+        width:1300px;
+    }
+}
+
+.card {
+    background: rgb(223, 223, 223);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    width: 200px;  
+    height: 250px; 
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-.album-track-list-qlf {
-    padding: .25rem .5rem;
-    transition: all 250ms;
-}
-
-.album-track-list-qlf:hover {
-    background-color: var(--primary) !important;
-    color: rgb(199, 69, 112);
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
 }
 
 .album-titre-display-qlf {
     padding: .25rem .5rem;
+    text-decoration: none;
     transition: all 250ms;
     background-color: var(--primary) !important;
     color: rgb(199, 69, 112);
 }
 
+.album-track-list-qlf {
+    background-color: var(--primary) !important;
+    list-style: none;     
+    padding: 0;
+    color: rgb(199, 69, 112);
+}
+
+.album-track-list-qlf li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    cursor: pointer; 
+    color: rgb(199, 69, 112);       
+    transition: color 0.3s; 
+}
+
+.album-track-list-qlf li:hover {
+    color: rgb(114, 28, 57);
+}
+
 .album-titre-display-lemondechico {
     padding: .25rem .5rem;
+    text-decoration: none;
     transition: all 250ms;
     background-color: var(--primary) !important;
     color: rgb(210, 9, 76);
 }
 
-.album-track-list-lemondechico:hover {
+.album-track-list-lemondechico {
     background-color: var(--primary) !important;
+    list-style: none;     
+    padding: 0;
     color: rgb(210, 9, 76);
+}
+
+.album-track-list-lemondechico li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    cursor: pointer; 
+    color: rgb(210, 9, 76);       
+    transition: color 0.3s; 
+}
+
+.album-track-list-lemondechico li:hover {
+    color: rgb(94, 5, 35);
 }
 
 .album-titre-display-danslalegende {
     padding: .25rem .5rem;
+    text-decoration: none;
     transition: all 250ms;
     background-color: var(--primary) !important;
-    color: rgb(213, 116, 30);
+    color: rgb(212, 146, 89);
 }
 
-.album-track-list-danslalegende:hover {
+.album-track-list-danslalegende {
     background-color: var(--primary) !important;
-    color: rgb(213, 116, 30);
+    list-style: none;     
+    padding: 0;
+    color: rgb(212, 146, 89);
+}
+
+.album-track-list-danslalegende li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    cursor: pointer; 
+    color: rgb(212, 146, 89);       
+    transition: color 0.3s; 
+}
+
+.album-track-list-danslalegende li:hover {
+    color: rgb(165, 87, 19);
 }
 
 .album-titre-display-deuxfreres {
     padding: .25rem .5rem;
+    text-decoration: none;
     transition: all 250ms;
     background-color: var(--primary) !important;
     color: rgb(30, 114, 187);
 }
 
-.album-track-list-deuxfreres:hover {
+.album-track-list-deuxfreres {
     background-color: var(--primary) !important;
+    list-style: none;     
+    padding: 0;
     color: rgb(30, 114, 187);
 }
 
-.sonlmc{
-    padding: .25rem .5rem;
-    transition: all 250ms;
-    background-color: var(--primary) !important;
-    color: rgb(210, 9, 76);
+.album-track-list-deuxfreres li {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  cursor: pointer;       
+  color: rgb(30, 114, 187);       
+  transition: color 0.3s; 
+}
+
+.album-track-list-deuxfreres li:hover {
+  color: rgb(17, 65, 107);       
+}
+
+.contact {
+    color: rgb(124, 142, 164);
 }
