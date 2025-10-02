@@ -66,6 +66,22 @@ h3 {
     color: white;
 }
 
+.titre-album-qlf {
+    color: rgb(199, 69, 112);
+}
+
+.titre-album-lmc {
+    color: rgb(210, 9, 76);
+}
+
+.titre-album-dll {
+    color: rgb(212, 146, 89);
+}
+
+.titre-album-df {
+    color: rgb(30, 114, 187);
+}
+
 .gallery {
     display: flex;
     align-items: center;
@@ -125,6 +141,26 @@ h3 {
     border-radius: 12px;
 }
 
+.card-index {
+    background: rgb(223, 223, 223);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease; 
+    width: 500px;  
+    height: 500px;
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-index img {
+    width: 95%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
 .album-titre-display-qlf {
     padding: .25rem .5rem;
     text-decoration: none;
@@ -138,6 +174,8 @@ h3 {
     list-style: none;     
     padding: 0;
     color: rgb(199, 69, 112);
+    margin: 0;
+    flex: 1;
 }
 
 .album-track-list-qlf li {
@@ -150,6 +188,7 @@ h3 {
 
 .album-track-list-qlf li:hover {
     color: rgb(114, 28, 57);
+    transform: translateY(-5px);
 }
 
 .album-titre-display-lemondechico {
@@ -177,6 +216,7 @@ h3 {
 
 .album-track-list-lemondechico li:hover {
     color: rgb(94, 5, 35);
+    transform: translateY(-5px);
 }
 
 .album-titre-display-danslalegende {
@@ -204,6 +244,7 @@ h3 {
 
 .album-track-list-danslalegende li:hover {
     color: rgb(165, 87, 19);
+    transform: translateY(-5px);
 }
 
 .album-titre-display-deuxfreres {
@@ -230,8 +271,57 @@ h3 {
 }
 
 .album-track-list-deuxfreres li:hover {
-  color: rgb(17, 65, 107);       
+  color: rgb(17, 65, 107);   
+  transform: translateY(-5px);    
 }
+
+.playlist-container {
+  display: flex;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+
+.playlist-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;   /* coins arrondis */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 600px) {
+  .playlist-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .playlist-image img {
+    margin-bottom: 1rem;
+  }
+
+
+}
+
+.playlist-card {
+  display: flex;
+  gap: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 320px;
+  min-height: 200px;
+  align-items: flex-start;
+  transition: transform 0.2s ease;
+}
+
+.playlist-card:hover {
+  transform: translateY(-5px);
+}
+
 
 .contact {
     color: rgb(124, 142, 164);
