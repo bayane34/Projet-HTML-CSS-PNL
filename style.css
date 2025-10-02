@@ -301,21 +301,19 @@ h3 {
   .playlist-image img {
     margin-bottom: 1rem;
   }
-
-
 }
 
 .playlist-card {
-  display: flex;
-  gap: 1.5rem;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 1rem;
-  width: 320px;
-  min-height: 200px;
-  align-items: flex-start;
-  transition: transform 0.2s ease;
+    display: flex;
+    gap: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 1rem;
+    width: 320px;
+    min-height: 200px;
+    align-items: flex-start;
+    transition: transform 0.2s ease;
 }
 
 .playlist-card:hover {
@@ -324,5 +322,46 @@ h3 {
 
 
 .contact {
-    color: rgb(124, 142, 164);
+    color: rgb(0, 0, 0);
+}
+
+.form-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 2rem;
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-form {
+
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.my-form input,
+.my-form textarea,
+.my-form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #00a6ff;
+}
+
+.my-form button {
+    background: #ffffff;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.my-form button:hover {
+    background: #28438b;
 }
