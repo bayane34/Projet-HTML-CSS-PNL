@@ -9,6 +9,8 @@ body {
 nav {
   background:rgb(12, 15, 18);   
   padding: 1rem;
+  position: sticky;
+  top: 0px;
 }
 
 
