@@ -134,6 +134,12 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.07); 
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15); 
 }
 
 .card img {
@@ -159,6 +165,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-index img {
@@ -166,6 +173,11 @@ h3 {
     height: auto;
     display: block;
     border-radius: 12px;
+}
+
+.card-index:hover {
+  transform: scale(1.02); 
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15); 
 }
 
 .album-titre-display-qlf {
