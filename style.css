@@ -357,21 +357,26 @@ h3 {
 }
 
 .my-form {
-
     display: flex;
     flex-direction: column;
     max-width: 400px;
     margin: 0 auto;
 }
 
-.my-form input,
-.my-form textarea,
-.my-form button {
+.my-form input {
     padding: 0.5rem;
     font-size: 1rem;
     border-radius: 6px;
     border: 1px solid #00a6ff;
 }
+
+.my-form textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #00a6ff;
+}
+
 
 .my-form button {
     background: #ffffff;
@@ -379,8 +384,13 @@ h3 {
     border: none;
     cursor: pointer;
     transition: background 0.2s;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #00a6ff;
 }
 
 .my-form button:hover {
     background: #28438b;
 }
+
