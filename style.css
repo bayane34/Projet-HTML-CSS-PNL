@@ -93,31 +93,31 @@ h3 {
     max-width: 100%; 
 }
 
-@media screen and (min-width:576) {
+@media screen and (min-width:576px) {
     .gallery {
         width:500px;
     }
 }
 
-@media screen and (min-width:768) {
+@media screen and (min-width:768px) {
     .gallery {
         width:700px;
     }
 }
 
-@media screen and (min-width:992) {
+@media screen and (min-width:992px) {
     .gallery {
         width:900px;
     }
 }
 
-@media screen and (min-width:1200) {
+@media screen and (min-width:1200px) {
     .gallery {
         width:1100px;
     }
 }
 
-@media screen and (min-width:1400) {
+@media screen and (min-width:1400px) {
     .gallery {
         width:1300px;
     }
