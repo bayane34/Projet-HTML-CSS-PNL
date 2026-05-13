@@ -74,6 +74,10 @@ h3 {
     color: white;
 }
 
+.description-text {
+    padding: 50px 100px;
+}
+
 .titre-album-qlf {
     color: rgb(199, 69, 112);
 }
