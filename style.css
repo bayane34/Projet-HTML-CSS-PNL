@@ -22,6 +22,12 @@ nav ul {
   gap: 1.5rem;
 }
 
+a {
+  color: white;        
+  text-decoration: none; 
+  font-weight: bold;
+  transition: color 0.2s;
+}
 
 nav a {
   color: white;        
@@ -91,6 +97,8 @@ h3 {
     gap: 1rem;
     justify-content: center; 
     max-width: 100%; 
+    padding: 40px 20px;
+    margin: 0 auto;
 }
 
 @media screen and (min-width:576px) {
@@ -178,6 +186,15 @@ h3 {
 .card-index:hover {
   transform: scale(1.02); 
   box-shadow: 0 6px 16px rgba(0,0,0,0.15); 
+}
+
+.playlist-container {
+    display: flex;
+    gap: 2rem;
+    max-width: 800px;
+    padding: 50px 20px ;
+    margin: 0 auto;
+    align-items: flex-start;
 }
 
 .album-titre-display-qlf {
@@ -392,4 +409,41 @@ h3 {
 
 .my-form button:hover {
     background: #28438b;
+}
+
+footer {
+    background-color: rgb(12, 15, 18);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 24px;
+    margin: 0 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0077b5; 
+    transform: scale(1.2);
+}
+
+.social-links a:first-child:hover {
+    color: #6e5494; 
+}
+
+.separateur {
+  width: 50px;
+  border: 0;
+  border-top: 1px solid #5a5a5a;
+  margin: 15px auto;
 }
