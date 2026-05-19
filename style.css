@@ -189,6 +189,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -462,4 +463,42 @@ footer {
   border: 0;
   border-top: 1px solid #5a5a5a;
   margin: 15px auto;
+}
+
+.pnl-cards-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap; 
+    margin-bottom: 40px;
+}
+
+.pnl-card {
+    background-color: #151f28; 
+    border: 1px solid #22313f;
+    border-radius: 10px;
+    padding: 30px 25px;
+    flex: 1;
+    min-width: 280px; 
+    max-width: 350px;
+    text-align: left; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.pnl-card h3 {
+    font-size: 20px;
+    color: #fff;
+    margin: 15px 0 10px 0;
+}
+
+.pnl-card p {
+    font-size: 14px;
+    color: #94a3b8; 
+    line-height: 1.6;
+}
+
+.pnl-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.2); 
+    border-color: #38bdf8;
 }
